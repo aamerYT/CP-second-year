@@ -5,6 +5,7 @@
 
 
 def fun_kth_occurrences(s, n):
+    if
 	return 'a'
 
 
