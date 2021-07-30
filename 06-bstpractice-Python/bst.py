@@ -8,15 +8,27 @@ class BST(object):
     def __init__(self, root):
         self.root = Node(root)
 
-    def insert(self, new_val):
-        # Your code goes here
-        pass
+    def insert(self, root):
+        if self.root:
+            if root < self.root:
+                if self.left is None:
+                    self.left = Node(root)
+            else:
+                self.left.insert(root)
+                else root > self.root:
+            if self.right is None:
+                self.right = Node(root)
+            else:
+                self.right.insert(root)
+            else:
+                self.root = root
 
-    def printSelf(self):
-        # Your code goes here
-        pass
+    def PrintTree(self):
+        if self.left:
+        self.left.PrintTree()
+    print( self.root),
+    if self.right:
+        self.right.PrintTree()
         
-    def search(self, find_val):
-        # Your code goes here
-        pass
+
 
