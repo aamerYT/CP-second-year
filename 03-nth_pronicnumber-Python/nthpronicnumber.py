@@ -3,6 +3,30 @@
 # Number. Pronic number is a number which is the product of two consecutive integers, that is, a 
 # number n is a product of x and (x+1).
 
+import math
+def checkPronic(x) :
+    
+    i = 0
+    
+    while ( i <= (int)(math.sqrt(x)) ) :
+        
+        if ( x == i * (i + 1)) :
+            return True
+        i = i + 1
+
+    return False
+
 def nthpronicnumber(n):
-	# Your code goes here
-	pass
+    round=0
+    
+    c=0
+    
+    while(round<=n):
+        
+        if(checkPronic(j)):
+            round+=1
+            
+            res=j
+            
+        j+=1
+    return res
